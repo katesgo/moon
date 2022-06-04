@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <title>Parallax Scrolling</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Moon</a>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Books</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+  <section>
+    <img src="stars.png" id="stars">
+    <img src="moon.png" id="moon">
+    <img src="mountains_behind.png" id="mountains_behind">
+    <h2 id="text">Moonlight Magic</h2>
+    <a href="#sec" id="btn">Enter</a>
+    <img src="mountains_front.png" id="mountains_front">
+  </section>
+  <div class="sec" id="sec">
+    <h2>The Mysteries of the Moon</h2>
+    <p> There's many mysteries of the moon, but let us take a moment to admire the beauty and elegance of a clear night on a full moon. First of all, to be able to edit a vector file, you need a vector editing software, such as Adobe Illustrator, which is the industry standard program.
+
+There are other programs that you can use, but these may create errors when opening and editing the files, if there are features that are not available, which is why, from Freepik, we recommend Adobe Illustrator.
+
+There are many tutorials and learning material that you can find about vector edition on the Internet and also in the Adobe website, but here there are a few tips that you can keep in mind when editing a vector from Freepik:<br><br>There's many reasons, but let us list the top 100. Awesome, funny, charistmatic, fun, all the networks!First of all, to be able to edit a vector file, you need a vector editing software, such as Adobe Illustrator, which is the industry standard program.
+
+There are other programs that you can use, but these may create errors when opening and editing the files, if there are features that are not available, which is why, from Freepik, we recommend Adobe Illustrator.
+
+There are many tutorials and learning material that you can find about vector edition on the Internet and also in the Adobe website, but here there are a few tips that you can keep in mind when editing a vector from Freepik:<br><br>There's many reasons, but let us list the top 100. Awesome, funny, charistmatic, fun, all the networks!First of all, to be able to edit a vector file, you need a vector editing software, such as Adobe Illustrator, which is the industry standard program.
+
+There are other programs that you can use, but these may create errors when opening and editing the files, if there are features that are not available, which is why, from Freepik, we recommend Adobe Illustrator.
+
+There are many tutorials and learning material that you can find about vector edition on the Internet and also in the Adobe website, but here there are a few tips that you can keep in mind when editing a vector from Freepik:<br><br>There's many reasons, but let us list the top 100. Awesome, funny, charistmatic, fun, all the networks!First of all, to be able to edit a vector file, you need a vector editing software, such as Adobe Illustrator, which is the industry standard program.
+
+There are other programs that you can use, but these may create errors when opening and editing the files, if there are features that are not available, which is why, from Freepik, we recommend Adobe Illustrator.
+
+There are many tutorials and learning material that you can find about vector edition on the Internet and also in the Adobe website, but here there are a few tips that you can keep in mind when editing a vector from Freepik:<br><br></p>
+  </div>
+
+  <script>
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon');
+    let mountains_behind = document.getElementById('mountains_behind');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let mountains_front = document.getElementById('mountains_front');
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+      stars.style.left = value * 0.25 + 'px';
+      moon.style.top = value * 1.05 + 'px';
+      mountains_behind.style.top = value * 0.5 + 'px';
+      mountains_front.style.top = value * 0 + 'px';
+      text.style.marginRight = value * 4 + 'px';
+      btn.style.marginTop = value * 1.5 + 'px';
+      header.style.top = value * 0.5 + 'px';
+      })
+  </script>
+</body>
+</html>
